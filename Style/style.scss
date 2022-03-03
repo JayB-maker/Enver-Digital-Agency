@@ -324,4 +324,51 @@ body{
         }
         
     }
+
+    @media only screen and (min-width: 768px){
+        margin: 0;
+        padding: 0;
+
+        .container{
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        header{
+            //display: fixed;
+            //position: relative;
+
+            .container{
+                position: relative;
+                width: 90%;
+                margin: 0 auto 0 auto;
+            }
+        }
+
+        section.hero{
+            .container{
+                display: flex;
+
+                .left_col{
+                    h1{
+                        font-size: 35px;
+                        line-height: 50px;
+                        margin-bottom: 30px;
+                    }
+
+                    blockquote{
+                        line-height: 30px;
+                        margin-bottom: 15px;
+                    }
+                }
+
+                .right_col{
+                    img{
+                        height: 340px;
+                        width: 390px;
+                    }
+                }
+            }
+        }
+    }
 }

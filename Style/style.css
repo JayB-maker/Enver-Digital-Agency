@@ -315,4 +315,38 @@ body .nav .contact_us a:hover {
   opacity: 80%;
   font-weight: 800;
 }
+
+@media only screen and (min-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  body .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  body header .container {
+    position: relative;
+    width: 90%;
+    margin: 0 auto 0 auto;
+  }
+  body section.hero .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body section.hero .container .left_col h1 {
+    font-size: 35px;
+    line-height: 50px;
+    margin-bottom: 30px;
+  }
+  body section.hero .container .left_col blockquote {
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
+  body section.hero .container .right_col img {
+    height: 340px;
+    width: 390px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
