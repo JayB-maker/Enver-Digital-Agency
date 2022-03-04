@@ -327,7 +327,7 @@ body .nav .contact_us a:hover {
   }
   body header .container {
     position: relative;
-    width: 90%;
+    width: 691px;
     margin: 0 auto 0 auto;
   }
   body section.hero {
@@ -522,6 +522,270 @@ body .nav .contact_us a:hover {
     font-size: 14px;
     padding: 0;
     margin: 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body .container {
+    width: 78%;
+    margin: 0, auto;
+  }
+  body header .container {
+    width: 78%;
+    height: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    place-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body header .container .logo {
+    margin: 0;
+  }
+  body header .container .logo a img {
+    margin: 0;
+    height: 40px;
+    width: 132px;
+  }
+  body header .container img.open_menu {
+    display: none;
+  }
+  body header .container .nav {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    place-content: space-between;
+    background: none;
+    height: 150px;
+    width: 65%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body header .container .nav ul {
+    width: 65%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+  }
+  body header .container .nav ul li {
+    padding: 0;
+    margin: 0;
+  }
+  body header .container .nav ul li a {
+    text-align: right;
+    font-size: 15px;
+    font-weight: 400;
+    padding-right: 20px;
+    width: auto;
+    margin: 0;
+  }
+  body header .container .nav ul li a.current {
+    color: var(--active_color);
+  }
+  body header .container .nav .contact_us {
+    margin: 0;
+  }
+  body header .container .nav .contact_us a {
+    margin: 0;
+    font-size: 15px;
+    background: none;
+    border: solid var(--text_color) 0.5px;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+  }
+  body header .container .nav .contact_us a:hover {
+    background-color: var(--active_color);
+    border: none;
+    font-weight: 400;
+  }
+  body header .container .nav img.close_menu {
+    display: none;
+  }
+  body section.hero {
+    margin-top: 50px;
+  }
+  body section.hero .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    place-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 78%;
+    margin: 0 auto;
+    text-align: left;
+  }
+  body section.hero .container .left_col {
+    padding: 0;
+    margin: 0 15% 0 0;
+  }
+  body section.hero .container .left_col h1 {
+    margin: 0 0 30px 0;
+    font-size: 60px;
+    line-height: 60px;
+  }
+  body section.hero .container .left_col blockquote {
+    font-size: 15px;
+    line-height: 30px;
+  }
+  body section.hero .container .right_col {
+    position: relative;
+  }
+  body section.hero .container .right_col .components .comp1 {
+    position: absolute;
+    margin: 0;
+    top: 30px;
+    left: -150px;
+    width: 95px;
+    height: 28px;
+  }
+  body section.hero .container .right_col .components .comp3 {
+    position: absolute;
+    margin: 0;
+    top: 0px;
+    right: 0px;
+    width: 51px;
+    height: 60px;
+  }
+  body section.hero .container .right_col .components .comp2 {
+    position: absolute;
+    margin: 0%;
+    top: 420px;
+    left: -150px;
+    width: 104.66px;
+    height: 120.07px;
+  }
+  body section.hero .container .right_col .components .comp4 {
+    position: absolute;
+    margin: 0;
+    top: 450px;
+    right: 0;
+    width: 50px;
+    height: 50px;
+  }
+  body section.hero .container .right_col img.man {
+    width: 410px;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+  }
+  body section.why_enver .container {
+    width: 78%;
+    margin: 0 auto;
+  }
+  body section.why_enver .container .upper_part {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: left;
+    margin: 0 0 30px;
+    place-content: space-between;
+    -webkit-box-align: top;
+        -ms-flex-align: top;
+            align-items: top;
+  }
+  body section.why_enver .container .upper_part h1 {
+    font-size: 50px;
+    line-height: 60px;
+    width: 50%;
+  }
+  body section.why_enver .container .upper_part blockquote {
+    font-size: 18px;
+    line-height: 20px;
+    width: 50%;
+  }
+  body section.why_enver .container .down_part {
+    margin: 0;
+    padding: 0;
+  }
+  body section.why_enver .container .down_part iframe {
+    width: 78%;
+    padding: 0;
+    margin-right: 0;
+  }
+  body section.services .container {
+    width: 78%;
+    margin: 0 auto 100px;
+  }
+  body section.services .container h1 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  body section.services .container ul {
+    margin: 0;
+    padding: 0;
+    -ms-grid-columns: 33.3% 33.3% 33.3%;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+    -webkit-column-gap: 50px;
+            column-gap: 50px;
+    row-gap: 50px;
+  }
+  body section.services .container ul li {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+  body section.services .container ul li h4 {
+    font-size: 20px;
+  }
+  body section.services .container ul li blockquote {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 10px 0px 0;
+  }
+  body section.services .container ul li:hover {
+    background: none;
+  }
+  body section.portfolio .container {
+    width: 78%;
+    margin: 0 auto;
+    text-align: left;
+  }
+  body section.portfolio .container h1 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  body section.portfolio .container .showcase {
+    padding: 0;
+    margin: 0;
+    width: 78%;
+    position: relative;
+  }
+  body section.portfolio .container .showcase img {
+    height: 210px;
+    width: 260px;
+  }
+  body section.portfolio .container .showcase .first {
+    position: absolute;
+    left: 0;
+  }
+  body section.portfolio .container .showcase .second {
+    position: absolute;
+    left: 45%;
+  }
+  body section.portfolio .container .showcase .third {
+    position: absolute;
+    left: 95%;
+  }
+  body section.contact .container {
+    width: 78%;
+    padding: 0;
+  }
+  body footer .container {
+    width: 78%;
+    padding: 0;
+  }
+  body footer .container .copyright {
+    text-align: right;
   }
 }
 /*# sourceMappingURL=style.css.map */

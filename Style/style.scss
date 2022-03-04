@@ -340,7 +340,7 @@ body{
 
             .container{
                 position: relative;
-                width: 90%;
+                width: 691px;
                 margin: 0 auto 0 auto;
             }
         }
@@ -557,6 +557,314 @@ body{
                         padding: 0;
                         margin: 0;
                     }
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width: 1024px){
+        .container{
+            width: 78%;
+            margin: 0, auto;
+        }
+
+        header{
+            .container{
+                width: 78%;
+                height: 150px;
+                display: flex;
+                place-content: space-between;
+                align-items: center;
+
+                .logo{
+                    margin: 0;
+                    a img{
+                        margin: 0;
+                        height: 40px;
+                        width: 132px;
+                    }
+                }
+
+                img.open_menu{
+                    display: none;
+                }
+
+                .nav{
+                    position: absolute;
+                    display: flex;
+                    place-content: space-between;
+                    background: none;
+                    height: 150px;
+                    width: 65%;
+                    align-items: center;
+
+                    ul{
+                        width: 65%;
+                        //gap: auto;
+                        display: flex;
+                        //place-content: space-between;
+                        align-items: center;
+                        margin: 0;
+
+                        li{
+                            padding: 0;
+                            margin: 0;
+                            a{
+                                text-align: right;
+                                font-size: 15px;
+                                font-weight: 400;
+                                padding-right: 20px;
+                                width: auto;
+                                margin: 0;
+                            }
+
+                            a.current{
+                                color: var(--active_color);
+                            }
+                        }
+                    }
+
+                    .contact_us{
+                        margin: 0;
+                        a{
+                            margin: 0;
+                            font-size: 15px;
+                            background: none;
+                            border: solid var(--text_color) 0.5px;
+                            transition: 300ms;
+
+                            &:hover{
+                                background-color: var(--active_color);
+                                border: none;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+
+
+                    img.close_menu{
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        section.hero{
+            margin-top: 50px;
+            .container{
+                display: flex;
+                place-content: space-between;
+                align-items: center;
+                width: 78%;
+                margin: 0 auto;
+                text-align: left;
+
+                .left_col{
+                    //width: 38%;
+                    padding: 0;
+                    margin: 0 15% 0 0;
+
+                    h1{
+                        margin: 0 0 30px 0;
+                        font-size: 60px;
+                        line-height: 60px;
+                    }
+
+                    blockquote{
+                        font-size: 15px;
+                        line-height: 30px;
+                    }
+                }
+
+                .right_col{
+                    position: relative;
+
+                    .components{
+                        .comp1{
+                            position: absolute;
+                            margin: 0;
+                            top: 30px;
+                            left: -150px;
+                            width: 95px;
+                            height: 28px;
+                        }
+
+                        .comp3{
+                            position: absolute;
+                            margin: 0;
+                            top: 0px;
+                            right: 0px;
+                            width: 51px;
+                            height: 60px;
+                        }
+
+                        .comp2{
+                            position: absolute;
+                            margin: 0%;
+                            top: 420px;
+                            left: -150px;
+                            width: 104.66px;
+                            height: 120.07px;
+                        }
+
+                        .comp4{
+                            position: absolute;
+                            margin: 0;
+                            top: 450px;
+                            right: 0;
+                            width: 50px;
+                            height: 50px;
+                        }
+                    }
+
+                    img.man{
+                        width: 410px;
+                        height: 500px;
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+
+        section.why_enver{
+            .container{
+                width: 78%;
+                margin: 0 auto;
+                
+                .upper_part{
+                    display: flex;
+                    text-align: left;
+                    margin: 0 0 30px;
+                    place-content: space-between;
+                    align-items: top;
+
+                    h1{
+                        font-size: 50px;
+                        line-height: 60px;
+                        width: 50%;
+                        //margin-right: ;
+                    }
+
+                    blockquote{
+                        font-size: 18px;
+                        line-height: 20px;
+                        width: 50%;
+                    }
+                }
+
+                .down_part{
+                    margin: 0;
+                    padding: 0;
+                    //width: 78%;
+                    iframe{
+                        width: 78%;
+                        //height: 46%px;
+                        padding: 0;
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+
+        section.services{
+            .container{
+                width: 78%;
+                margin: 0 auto 100px;
+
+                h1{
+                    font-size: 50px;
+                    line-height: 60px;
+                }
+
+                ul{
+                    //width: 78%;
+                    margin: 0;
+                    padding: 0;
+                    grid-template-columns: 33.3% 33.3% 33.3%;
+                    column-gap: 50px;
+                    row-gap: 50px;
+
+                    li{
+                        border: 0;
+                        margin: 0;
+                        padding: 0;
+
+                        h4{
+                            font-size: 20px;
+                        }
+
+                        blockquote{
+                            font-size: 14px;
+                            line-height: 16px;
+                            padding: 10px 0px 0;
+                        }
+
+                        &:hover{
+                            background: none;
+
+                        }
+                    }
+                }
+            }
+        }
+
+        section.portfolio{
+            .container{
+                width: 78%;
+                margin: 0 auto;
+                text-align: left;
+
+                h1{
+                    font-size: 50px;
+                    line-height: 60px;
+                }
+
+                .showcase{
+                    padding: 0;
+                    margin: 0;
+                    width: 78%;
+                    position: relative;
+
+                    img{
+                        height: 210px;
+                        width: 260px;
+                    }
+                    .first{
+                        position: absolute;
+                        left: 0;
+                    }
+
+                    .second{
+                        position: absolute;
+                        left: 45%;
+                    }
+
+                    .third{
+                        position: absolute;
+                        left: 95%;
+                        //right: 0;
+                    }
+                }
+            }
+        }
+        
+        section.contact{
+            .container{
+                width: 78%;
+                padding: 0;
+                //margin: 0;
+            }
+        }
+
+        footer{
+            .container{
+                width: 78%;
+                padding: 0;
+                //margin: 0;
+
+                .copyright{
+                    text-align: right;
                 }
             }
         }
