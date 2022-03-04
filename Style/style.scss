@@ -346,26 +346,216 @@ body{
         }
 
         section.hero{
-            .container{
-                display: flex;
+            text-align: center;
 
-                .left_col{
-                    h1{
-                        font-size: 35px;
-                        line-height: 50px;
-                        margin-bottom: 30px;
+            .left_col{
+                margin: 0 150px;
+            }
+
+            .right_col{
+                width: 691px;
+                margin: 0 auto;
+                img{
+                    height: fit-content;
+                    width: fit-content;
+                    margin-top: 50px;
+                }
+
+                .components{
+                    display: block;
+                    position: relative;
+
+                    .comp1{
+                        position: absolute;
+                        top: 150px;
                     }
 
-                    blockquote{
-                        line-height: 30px;
-                        margin-bottom: 15px;
+                    .comp2{
+                        position: absolute;
+                        top: 650px;
+                    }
+
+                    .comp3{
+                        position: absolute;
+                        top: 100px;
+                    }
+
+                    .comp4{
+                        position: absolute;
+                        top: 650px;
+                    }
+                }
+            }
+        }
+
+        section.why_enver{
+            text-align: center;
+            margin-top: 100px;
+
+            .container{
+                .upper_part{
+                    margin: 0 150px;
+                }
+                
+                .down_part{
+                    iframe{
+                        height: 368px;
+                        width: 691px;
+                    }
+                }
+            }
+        }
+
+        section.services{
+            text-align: center;
+
+            .container{
+                width: 691px;
+
+                h1{
+                    margin: 0 150px 100px;
+
+                }
+
+                ul{
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    column-gap: 50px;
+                    position: relative;
+                    margin: 0 auto;
+
+                    li{
+                        //margin: 0 20px 100px 20px;
+                        border: solid 0.5px;
+                        border-radius: 15px;
+                        padding: 10px;
+                        transition: 300ms;
+
+                        &:hover{
+                            border: none;
+                            background-color: var(--active_color);
+                        }
+                    }
+                }
+            }
+        }
+
+        section.portfolio{
+            text-align: center;
+            .container{
+                display: block;
+                margin: 0 auto;
+                width: 90%;
+
+                h1{
+                    margin: 0 0 50px;
+                }
+
+                .showcase{
+                    width: 691px;
+                    display:grid;
+                    grid-template-columns: repeat(3, 230px);
+                    gap: 10px;
+                    background: none;
+                    height: 250px;
+                    margin: 0 auto;
+                    position: relative;
+
+                    img{
+
+                        display:block;
+                        height: 165px;
+                        width: 215px;
+                    }
+
+                    .first{
+                        position: absolute;
+                        background: none;
+                        top: 0px;
+                        left: 0;
+                    }
+
+                    .second{
+                        position: absolute;
+                        top: 50px;
+                        left: 238.5px;
+                        //margin: 0 auto;
+                    }
+
+                    .third{
+                        position: absolute;
+                        top: 100px;
+                        right: 0px;
+                        //margin: 0 auto;
+                    }
+                }
+            }
+
+        }
+
+        section.contact{
+            margin: 0;
+            .container{
+                width: 691px;
+                display: flex;
+                place-content: space-between;
+                align-items: center;
+                margin: 0 auto 100px;
+
+                h1{
+                    margin: 0;
+                    padding: 0;
+                    width: 500px;
+                }
+
+                a{
+                    display: block;
+                }
+            }
+        }
+
+        footer{
+            margin: 0 auto 50px;
+
+            .container{
+                width: 691px;
+                display: grid;
+                grid-template-columns: 20% 50% 30%;
+                gap: auto;
+                align-items: center;
+
+                img{
+                    padding: 0;
+                    margin: 0;
+                }
+
+                .short_link{
+                    margin: 0;
+                    padding: 0;
+                    ul{
+                        display: grid;
+                        align-items: center;
+                        grid-template-columns: 20% 30% 50%;
+                        column-gap: auto;
+
+                        li{
+                            padding: 0;
+                            margin: 0;
+
+                            a{
+                                font-size: 14px;
+                                padding: 0;
+                                margin: 0;
+                            }
+                        }
                     }
                 }
 
-                .right_col{
-                    img{
-                        height: 340px;
-                        width: 390px;
+                .copyright{
+                    p{
+                        font-size: 14px;
+                        padding: 0;
+                        margin: 0;
                     }
                 }
             }
