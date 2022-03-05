@@ -45,7 +45,7 @@ body header .container img.open_menu {
 }
 
 body .nav {
-  display: none;
+  display: block;
 }
 
 body section.hero {
