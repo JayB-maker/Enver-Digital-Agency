@@ -1,7 +1,11 @@
 const OpenMenu = document.getElementById('open_menu')
       CloseMenu = document.getElementById('close_menu')
-      nav=document.querySelector('nav');
+      Nav=document.querySelector('nav');
 
-      OpenMenu.addEventListener('click', () =>{
-          nav.classlist.add('nav')
+      OpenMenu.addEventListener('click', () => {
+          Nav.classlist.add('mobile_menu');
       })
+
+      CloseMenu.addEventListener('click', () => {
+        Nav.classlist.remove('mobile_menu');
+    })

@@ -46,8 +46,8 @@ body{
         }
     }
 
-    .nav{
-        display: block;
+    nav.mobile_menu{
+        display: none;
     }
 
     section.hero{
@@ -270,7 +270,7 @@ body{
 
     }
 
-    .nav{
+    nav{
         display: none;
         position: fixed;
         top: 0;

@@ -44,8 +44,8 @@ body header .container img.open_menu {
   float: right;
 }
 
-body .nav {
-  display: block;
+body nav.mobile_menu {
+  display: none;
 }
 
 body section.hero {
@@ -261,7 +261,7 @@ body footer .copyright p {
   margin-bottom: 70px;
 }
 
-body .nav {
+body nav {
   display: none;
   position: fixed;
   top: 0;
@@ -273,33 +273,33 @@ body .nav {
   text-align: right;
 }
 
-body .nav img {
+body nav img {
   width: 24px;
   height: 24px;
   margin: 24px 24px 50px 0;
   cursor: pointer;
 }
 
-body .nav li {
+body nav li {
   margin: 0 24px 24px 0;
 }
 
-body .nav li a {
+body nav li a {
   color: var(--text_color);
   font-size: 20px;
   font-weight: 400;
 }
 
-body .nav li a:hover {
+body nav li a:hover {
   color: var(--active_color);
   font-weight: 800;
 }
 
-body .nav .contact_us {
+body nav .contact_us {
   margin-top: 40px;
 }
 
-body .nav .contact_us a {
+body nav .contact_us a {
   color: var(--text_color);
   font-size: 20px;
   font-weight: 400;
@@ -310,7 +310,7 @@ body .nav .contact_us a {
   transition: 300ms;
 }
 
-body .nav .contact_us a:hover {
+body nav .contact_us a:hover {
   background-color: var(--active_color);
   opacity: 80%;
   font-weight: 800;
