@@ -531,6 +531,7 @@ body nav .contact_us a:hover {
     margin: 0, auto;
   }
   body header .container {
+    position: relative;
     width: 78%;
     height: 150px;
     display: -webkit-box;
@@ -552,7 +553,7 @@ body nav .contact_us a:hover {
   body header .container img.open_menu {
     display: none;
   }
-  body header .container .nav {
+  body header .container nav {
     position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -564,22 +565,26 @@ body nav .contact_us a:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin: 0;
   }
-  body header .container .nav ul {
+  body header .container nav ul {
+    position: relative;
     width: 65%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    place-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     margin: 0;
+    padding: 0;
   }
-  body header .container .nav ul li {
+  body header .container nav ul li {
     padding: 0;
     margin: 0;
   }
-  body header .container .nav ul li a {
+  body header .container nav ul li a {
     text-align: right;
     font-size: 15px;
     font-weight: 400;
@@ -587,13 +592,15 @@ body nav .contact_us a:hover {
     width: auto;
     margin: 0;
   }
-  body header .container .nav ul li a.current {
+  body header .container nav ul li a.current {
     color: var(--active_color);
   }
-  body header .container .nav .contact_us {
+  body header .container nav .contact_us {
+    position: relative;
     margin: 0;
+    display: block;
   }
-  body header .container .nav .contact_us a {
+  body header .container nav .contact_us a {
     margin: 0;
     font-size: 15px;
     background: none;
@@ -601,18 +608,19 @@ body nav .contact_us a:hover {
     -webkit-transition: 300ms;
     transition: 300ms;
   }
-  body header .container .nav .contact_us a:hover {
+  body header .container nav .contact_us a:hover {
     background-color: var(--active_color);
     border: none;
     font-weight: 400;
   }
-  body header .container .nav img.close_menu {
+  body header .container nav img.close_menu {
     display: none;
   }
   body section.hero {
     margin-top: 50px;
   }
   body section.hero .container {
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -626,7 +634,7 @@ body nav .contact_us a:hover {
   }
   body section.hero .container .left_col {
     padding: 0;
-    margin: 0 15% 0 0;
+    margin: 0;
   }
   body section.hero .container .left_col h1 {
     margin: 0 0 30px 0;
@@ -636,9 +644,12 @@ body nav .contact_us a:hover {
   body section.hero .container .left_col blockquote {
     font-size: 15px;
     line-height: 30px;
+    margin-right: 12em;
   }
   body section.hero .container .right_col {
     position: relative;
+    margin: 0;
+    padding: 0;
   }
   body section.hero .container .right_col .components .comp1 {
     position: absolute;

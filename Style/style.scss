@@ -569,7 +569,9 @@ body{
         }
 
         header{
+            
             .container{
+                position: relative;
                 width: 78%;
                 height: 150px;
                 display: flex;
@@ -589,7 +591,7 @@ body{
                     display: none;
                 }
 
-                .nav{
+                nav{
                     position: absolute;
                     display: flex;
                     place-content: space-between;
@@ -597,14 +599,17 @@ body{
                     height: 150px;
                     width: 65%;
                     align-items: center;
+                    margin: 0;
 
                     ul{
+                        position: relative;
                         width: 65%;
                         //gap: auto;
                         display: flex;
-                        //place-content: space-between;
+                        place-content: space-between;
                         align-items: center;
                         margin: 0;
+                        padding: 0;
 
                         li{
                             padding: 0;
@@ -625,7 +630,9 @@ body{
                     }
 
                     .contact_us{
+                        position: relative;
                         margin: 0;
+                        display: block;
                         a{
                             margin: 0;
                             font-size: 15px;
@@ -652,6 +659,7 @@ body{
         section.hero{
             margin-top: 50px;
             .container{
+                position: relative;
                 display: flex;
                 place-content: space-between;
                 align-items: center;
@@ -662,7 +670,7 @@ body{
                 .left_col{
                     //width: 38%;
                     padding: 0;
-                    margin: 0 15% 0 0;
+                    margin: 0;
 
                     h1{
                         margin: 0 0 30px 0;
@@ -673,11 +681,15 @@ body{
                     blockquote{
                         font-size: 15px;
                         line-height: 30px;
+                        margin-right: 12em;
                     }
                 }
 
                 .right_col{
                     position: relative;
+                    //width: 50%;
+                    margin: 0;
+                    padding: 0;
 
                     .components{
                         .comp1{
