@@ -18,18 +18,34 @@
 body{
     font-family: 'Noto Serif', serif;
     font-family: 'Nunito Sans', sans-serif;
-    margin: 40px 24px 0 24px;
+    //margin: 40px 24px 0 24px;
     background-color: var(--background_color);
     color: var(--text_color);
-    //padding: 40px 24px 40;
+    padding: 40px 24px 0 24px;
 
     header{
+        top: 0;
+        position: fixed;
+        padding: 0;
+        margin: 0;
+        height: 80px;
+        width: 100vw;
+        display: block;
+        //position: relative;
+        //background-color: var(--background_color);
+        background: red;
+        z-index: 999;
         .container{
+            //background-color: white;
+            position: relative;
+            margin: 0;
+            padding: 0;
             width: 87.2%;
             display: flex;
             top: 24px;
+
             //grid-template-columns: 80% 20%;
-            position: fixed;
+            
             place-content: space-between;
             //margin-bottom: 80px;
             align-items: center;
