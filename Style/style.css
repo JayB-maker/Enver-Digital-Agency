@@ -30,7 +30,7 @@ body header {
   height: 80px;
   width: 100vw;
   display: block;
-  background: red;
+  background-color: var(--background_color);
   z-index: 999;
 }
 
@@ -92,13 +92,18 @@ body section.hero a img {
   margin-bottom: -8px;
 }
 
-body section.hero .components {
-  width: 87.2%;
-  margin: 0 auto;
-  display: block;
+body section.hero .right_col {
+  margin-top: 110px;
+  margin-bottom: 120px;
 }
 
-body section.hero .components .comp1 {
+body section.hero .right_col .components {
+  width: 87.2%;
+  margin: 0 auto;
+  display: none;
+}
+
+body section.hero .right_col .components .comp1 {
   position: absolute;
   width: 61.07px;
   height: 18px;
@@ -106,7 +111,7 @@ body section.hero .components .comp1 {
   left: 24px;
 }
 
-body section.hero .components .comp2 {
+body section.hero .right_col .components .comp2 {
   position: absolute;
   width: 65.44px;
   height: 75.07px;
@@ -114,7 +119,7 @@ body section.hero .components .comp2 {
   left: 24px;
 }
 
-body section.hero .components .comp3 {
+body section.hero .right_col .components .comp3 {
   position: absolute;
   width: 35.7px;
   height: 43px;
@@ -122,7 +127,7 @@ body section.hero .components .comp3 {
   right: 41.3px;
 }
 
-body section.hero .components .comp4 {
+body section.hero .right_col .components .comp4 {
   position: absolute;
   width: 39px;
   height: 39px;
@@ -130,14 +135,10 @@ body section.hero .components .comp4 {
   right: 30px;
 }
 
-body section.hero .right_col {
-  margin-top: 110px;
-  margin-bottom: 120px;
-}
-
 body section.hero .right_col img {
   height: 370px;
-  width: 350px;
+  width: 300px;
+  margin: 20px auto 20px auto;
 }
 
 body section.why_enver {
