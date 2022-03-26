@@ -19,11 +19,12 @@ body {
   font-family: 'Nunito Sans', sans-serif;
   background-color: var(--background_color);
   color: var(--text_color);
-  padding: 40px 24px 0 24px;
+  padding: 8vh 4vw 0 4vw;
 }
 
 body header {
   top: 0;
+  left: 0;
   position: fixed;
   padding: 0;
   margin: 0;
@@ -36,13 +37,14 @@ body header {
 
 body header .container {
   position: relative;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  width: 87.2%;
+  width: 92vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   top: 24px;
+  left: 0vw;
   place-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -55,7 +57,9 @@ body header .container .logo {
 }
 
 body header .container img.open_menu {
-  float: right;
+  display: block;
+  position: relative;
+  right: 0;
 }
 
 body nav.mobile_menu {
@@ -100,7 +104,7 @@ body section.hero .right_col {
 body section.hero .right_col .components {
   width: 87.2%;
   margin: 0 auto;
-  display: none;
+  display: block;
 }
 
 body section.hero .right_col .components .comp1 {
@@ -544,11 +548,17 @@ body nav .contact_us a:hover {
   body .container {
     width: 78%;
     margin: 0, auto;
+    position: relative;
+  }
+  body header {
+    background: var(--background_color);
+    height: 100px;
+    width: 100vw;
+    position: fixed;
   }
   body header .container {
     position: relative;
     width: 78%;
-    height: 150px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -570,6 +580,7 @@ body nav .contact_us a:hover {
   }
   body header .container nav {
     position: absolute;
+    top: -50px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -632,7 +643,7 @@ body nav .contact_us a:hover {
     display: none;
   }
   body section.hero {
-    margin-top: 50px;
+    margin-top: 150px;
   }
   body section.hero .container {
     position: relative;
@@ -738,38 +749,56 @@ body nav .contact_us a:hover {
     padding: 0;
     margin-right: 0;
   }
+  body section.services {
+    margin: 0;
+    padding: 0;
+  }
   body section.services .container {
+    position: relative;
     width: 78%;
-    margin: 0 auto 100px;
+    margin: 0 auto 100px auto;
+    padding: 0;
   }
   body section.services .container h1 {
     font-size: 50px;
     line-height: 60px;
   }
   body section.services .container ul {
-    margin: 0;
+    position: absolute;
+    left: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 78%;
     padding: 0;
+    display: -ms-grid;
+    display: grid;
     -ms-grid-columns: 33.3% 33.3% 33.3%;
         grid-template-columns: 33.3% 33.3% 33.3%;
-    -webkit-column-gap: 50px;
-            column-gap: 50px;
-    row-gap: 50px;
+    -webkit-column-gap: 100px;
+            column-gap: 100px;
+    row-gap: 100px;
   }
   body section.services .container ul li {
     border: 0;
     margin: 0;
     padding: 0;
+    width: 200px;
   }
   body section.services .container ul li h4 {
-    font-size: 20px;
+    font-size: 18px;
   }
   body section.services .container ul li blockquote {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 16px;
     padding: 10px 0px 0;
   }
   body section.services .container ul li:hover {
     background: none;
+  }
+  body section.portfolio {
+    position: relative;
+    top: 500px;
   }
   body section.portfolio .container {
     width: 78%;

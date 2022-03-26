@@ -21,10 +21,11 @@ body{
         //margin: 40px 24px 0 24px;
         background-color: var(--background_color);
         color: var(--text_color);
-        padding: 40px 24px 0 24px;
+        padding: 8vh 4vw 0 4vw;
 
         header{
             top: 0;
+            left: 0;
             position: fixed;
             padding: 0;
             margin: 0;
@@ -34,14 +35,17 @@ body{
             //position: relative;
             background-color: var(--background_color);
             z-index: 999;
+
             .container{
                 //background-color: white;
                 position: relative;
-                margin: 0;
+                margin: 0 auto;
                 padding: 0;
-                width: 87.2%;
+                width: 92vw;
                 display: flex;
                 top: 24px;
+                left: 0vw;
+                //right: 24px;
 
                 //grid-template-columns: 80% 20%;
                 
@@ -56,7 +60,10 @@ body{
                 }
 
                 img.open_menu{
-                    float: right;
+                    display: block;
+                    position: relative;
+                    right: 0;
+                    //float: right;
                 }
             }
         }
@@ -102,7 +109,7 @@ body{
                 .components{
                     width: 87.2%;
                     margin: 0 auto;
-                    display: none;
+                    display: block;
                     //position: absolute;
     
                     .comp1{
@@ -586,14 +593,20 @@ body{
         .container{
             width: 78%;
             margin: 0, auto;
+            position: relative;
         }
 
         header{
+            background: var(--background_color);
+            height: 100px;
+            width: 100vw;
+            position: fixed;
             
             .container{
+                
                 position: relative;
                 width: 78%;
-                height: 150px;
+                
                 display: flex;
                 place-content: space-between;
                 align-items: center;
@@ -613,6 +626,7 @@ body{
 
                 nav{
                     position: absolute;
+                    top: -50px;
                     display: flex;
                     place-content: space-between;
                     background: none;
@@ -677,7 +691,7 @@ body{
         }
 
         section.hero{
-            margin-top: 50px;
+            margin-top: 150px;
             .container{
                 position: relative;
                 display: flex;
@@ -800,9 +814,13 @@ body{
         }
 
         section.services{
+            margin: 0;
+            padding: 0;
             .container{
+                position: relative;
                 width: 78%;
-                margin: 0 auto 100px;
+                margin: 0 auto 100px auto;
+                padding: 0;
 
                 h1{
                     font-size: 50px;
@@ -810,24 +828,30 @@ body{
                 }
 
                 ul{
-                    //width: 78%;
-                    margin: 0;
+                    position: absolute;
+                    left: 0;
+                    align-items: center;
+                    width: 78%;
+                    //margin: 0 auto 0 auto;
                     padding: 0;
+                    display: grid;
                     grid-template-columns: 33.3% 33.3% 33.3%;
-                    column-gap: 50px;
-                    row-gap: 50px;
+                    column-gap: 100px;
+                    row-gap: 100px;
 
                     li{
                         border: 0;
                         margin: 0;
                         padding: 0;
+                        width: 200px;
 
                         h4{
-                            font-size: 20px;
+                            font-size: 18px;
                         }
 
                         blockquote{
-                            font-size: 14px;
+                            
+                            font-size: 12px;
                             line-height: 16px;
                             padding: 10px 0px 0;
                         }
@@ -842,6 +866,8 @@ body{
         }
 
         section.portfolio{
+            position: relative;
+            top: 500px;
             .container{
                 width: 78%;
                 margin: 0 auto;
